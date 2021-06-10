@@ -1,0 +1,21 @@
+<h1>TOPSUPREME PRODUCTS</h1>
+<table class="table">
+  <thead>
+    <tr class="table-primary">
+      <th>#Product Id</th>
+      <th>Name</th>
+      <th>Permalink</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of USERS">
+      <th scope="row">{{data.id}}</th>
+      <td>{{data.name}}</td>
+      <td>{{data.permalink}}</td>
+      <td>{{data.price}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<router-outlet></router-outlet>
